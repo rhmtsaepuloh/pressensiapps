@@ -1,0 +1,212 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.folkatech.pressensiapps"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        // Add a BuildConfig timestamp
+        buildConfigField "long", "M_TIMESTAMP", System.currentTimeMillis() + "L"
+    }
+
+    // Add this block and enable/disable the parameters as follows
+    bundle {
+        density {
+            // Different APKs are generated for devices with different screen densities; true by default.
+            enableSplit true
+        }
+        abi {
+            // Different APKs are generated for devices with different CPU architectures; true by default.
+            enableSplit true
+        }
+        language {
+            // This is disabled so that the App Bundle does NOT split the APK for each language.
+            // We're gonna use the same APK for all languages.
+            enableSplit false
+        }
+    }
+
+    // Define the endpoint strings
+    def endpointFile = file('endpoint.properties')
+    def Properties endpointProperties = new Properties()
+    endpointProperties.load(new FileInputStream(endpointFile))
+
+    // Specify the build dimension and flavors
+    flavorDimensions "api"
+    productFlavors {
+        development {
+            dimension "api"
+//            applicationIdSuffix '.staging'
+//            versionNameSuffix "-development"
+
+            buildConfigField 'String', 'M_WEB_URL', endpointProperties['DEVELOPMENT_URL']
+            buildConfigField 'String', 'M_API_URL', endpointProperties['DEVELOPMENT_URL_API']
+            buildConfigField 'String', 'M_API_KEY', endpointProperties['DEVELOPMENT_API_KEY']
+        }
+        production {
+            dimension "api"
+            buildConfigField 'String', 'M_WEB_URL', endpointProperties['PRODUCTION_URL']
+            buildConfigField 'String', 'M_API_URL', endpointProperties['PRODUCTION_URL_API']
+            buildConfigField 'String', 'M_API_KEY', endpointProperties['PRODUCTION_API_KEY']
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'waktoo'
+            keyPassword 'waktoo'
+            storeFile file('/Users/rhmtsaepuloh/Documents/Mobile/PressensiApps/waktoo.jks')
+            storePassword 'waktoo'
+        }
+    }
+
+    buildTypes {
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles fileTree('proguard').asList().toArray()
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            proguardFiles fileTree('proguard').asList().toArray()
+
+            signingConfig signingConfigs.config
+        }
+
+        android.applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+//                    outputFileName = "${output.outputFile.name}-${variant.versionName}.apk"
+                def formattedDate = new Date().format('ddMMyy')
+                outputFileName = output.outputFile.name.replace(".apk", "-${variant.versionName}-${formattedDate}.apk")
+
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.6'
+
+    //Google Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+
+    // Android Material Design
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Dependency Injection
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    implementation "com.google.dagger:dagger-android:$dagger2_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger2_version"
+    compileOnly 'javax.annotation:jsr250-api:1.0'
+    implementation 'javax.inject:javax.inject:1'
+
+    // Rx
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "com.jakewharton.rxbinding3:rxbinding:$rxbinding_version"
+
+    // Retrofit2 + Gson
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2_version"
+
+    // Material Ripple Layout
+    implementation "com.balysv:material-ripple:$materialripple_version"
+
+    // Ripple Background
+    implementation "com.skyfishjy.ripplebackground:library:$ripplebackground_version"
+
+    // Circle Image View
+    implementation "de.hdodenhof:circleimageview:$circleimageview_version"
+
+    // App Updater
+    implementation "com.github.javiersantos:AppUpdater:$appupdater_version"
+
+    // Sweet Alert
+    implementation project(':library')
+//    implementation "cn.pedant.sweetalert:library:$sweetalert_version"
+
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    // Play Services
+    implementation "com.google.android.gms:play-services-location:$playservices_version"
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    // Compressor
+    implementation "id.zelory:compressor:$compressor_version"
+
+    // Date Time Picker
+    implementation "com.wdullaer:materialdatetimepicker:$datetimepicker_version"
+
+    // Chart
+    implementation "com.github.PhilJay:MPAndroidChart:$mpandroidchart_version"
+
+    // Recyclerview Animators
+    implementation "jp.wasabeef:recyclerview-animators:$rvanimators_version"
+
+    // Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:5.2.0'
+
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // Spinner Date
+    implementation 'com.github.drawers:SpinnerDatePicker:2.0.1'
+
+    //page indicator
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+}

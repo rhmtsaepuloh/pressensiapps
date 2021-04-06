@@ -1,0 +1,385 @@
+<resources>
+    <string name="app_name">Pressensi</string>
+
+    <string name="launch_activity">Launch activity</string>
+
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="remove_location_updates">Remove location updates</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="error_email">Email tidak boleh kosong !</string>
+    <string name="error_password">Kata sandi tidak boleh kosong !</string>
+
+    <string name="tab_log">Attendance Data</string>
+    <string name="tab_chart">Attendance Statistics</string>
+    <string name="tab_gaji">Salary Information</string>
+    <string name="tab_history">History Information</string>
+    <string name="tab_pegawai">Employee List</string>
+
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <string name="text_pengumuman">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.</string>
+
+    <string name="label_warning">Warning</string>
+
+    <!--Splash Activity-->
+    <string name="label_message_apps_requirement">This app requires read phone state permission to run properly.</string>
+    <string name="label_show_permission">Show permission</string>
+    <string name="label_close_app">Close Apps</string>
+
+    <string name="btn_activity_apel_izin">Permission</string>
+    <string name="activity_edit_profile_ubah_foto">Change Photos</string>
+
+    <!--Edit Profile Activity-->
+    <string name="activity_edit_profile_nama">Name</string>
+    <string name="activity_edit_profile_telepon">Telephone</string>
+    <string name="activity_edit_profile_alamat">Address</string>
+    <string name="title_image_picker">Pilih Foto</string>
+    <string name="label_message_error_name">Nama tidak boleh kosong</string>
+    <string name="label_message_email_tidak_valid">Email tidak valid</string>
+    <string name="label_message_error_telephone">Telepon tidak boleh kosong</string>
+    <string name="label_message_error_address">Alamat tidak boleh kosong</string>
+    <string name="label_message_edit_berhasil">Data akun berhasil diperbarui</string>
+    <string name="activity_login_nip" translatable="false">Nip/No. Telp</string>
+    <string name="activity_login_password">Password</string>
+
+    <!--Login Activity-->
+    <string name="btn_activity_login_forgot">Forgot Password ?</string>
+    <string name="label_message_logging_in" translatable="false">Memuat…</string>
+    <string name="label_message_tidak_dapat_login">Tidak dapat masuk</string>
+    <string name="label_message_error_koneksi">Tidak dapat mengkakses data.\n  Mohon periksa koneksi anda kembali</string>
+    <string name="label_message_mengambil_data_user">Mengambil informasi pengguna…</string>
+    <string name="label_message_error_server">Ada kesalahan pada server</string>
+    <string name="label_sign_in_with" translatable="false">Sign In With</string>
+    <string name="label_don_t_have_an_account">Don\'t have an account?</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="label_sign_in">Login</string>
+    <string name="activity_main_keterangan">Ket : </string>
+    <string name="activity_cuti_pilih_tipe">Select Type</string>
+
+    <string name="activity_cuti_pilih_tgl_pengajuan">Date of filing</string>
+
+    <!--Pengajuan Izin Activity-->
+    <string name="activity_cuti_pilih_tgl_dr_tanggal">Dari tanggal</string>
+    <string name="activity_cuti_pilih_tgl_sampai_tanggal">Sampai tanggal</string>
+    <string name="activity_cuti_pilih_keterangan">Information</string>
+    <string name="btn_activity_cuti_batalkan">Cancel</string>
+    <string name="btn_activity_cuti_ajukan">Submit</string>
+    <string name="title_pengajuan">Submission</string>
+    <string name="label_message_error_tanggal_awal">Start date is empty</string>
+    <string name="label_message_error_tanggal_akhir">End date is empty</string>
+    <string name="label_message_error_keterangan">Information must be filled in</string>
+    <string name="label_message_pengajuan_lembur_submitted">Pengajuan lembur anda berhasil dikirim!</string>
+    <string name="activity_profile_unit">Unit</string>
+    <string name="activity_profile_email">Email</string>
+
+    <string name="btn_activity_keluar">Logout</string>
+    <string name="btn_activity_ubah_kata_sandi">Change Password</string>
+    <string name="activity_ubah_pass_pass_lama">Old Password</string>
+    <string name="activity_ubah_pass_pass_baru">New Password</string>
+
+    <!--Change Password Activity-->
+    <string name="activity_ubah_pass_pass_ulangi">Repeat Password</string>
+    <string name="label_message_error_password">Kata sandi tidak boleh kosong !</string>
+    <string name="activity_info_gaji_nama">Name</string>
+    <string name="activity_info_gaji_NIP">NIP</string>
+
+    <string name="activity_info_gaji_jabatan">Position</string>
+    <string name="activity_info_gaji_tanggal">Date</string>
+    <string name="activity_info_gaji_departemen">Department</string>
+    <string name="activity_info_gaji_info_tunjangan_kinerja">Performance Allowance Information</string>
+    <string name="activity_info_gaji_gaji_pokok">Basic Salary</string>
+    <string name="activity_info_gaji_potongan_tidak_hadir">Pieces are not present</string>
+    <string name="activity_info_gaji_potongan_lainnya">Other pieces</string>
+    <string name="activity_info_gaji_total_pendapatan">Total income</string>
+    <string name="activity_info_gaji_total_tunjangan_kinerja">Total performance allowance</string>
+    <string name="activity_info_gaji_total">Total</string>
+    <string name="data_absensi_ke_tanggal">To Date</string>
+    <string name="data_absensi_tanggal">Date</string>
+
+    <string name="data_absensi_ringkasan_data_abseni">Summary of attendance data :</string>
+    <string name="data_absensi_waktu_datang">Time to come</string>
+    <string name="data_absensi_waktu_istirahat">Time off</string>
+    <string name="data_absensi_waktu_kembali">Time back</string>
+    <string name="data_absensi_waktu_keluar">Time out</string>
+    <string name="data_absensi_status">Status</string>
+    <string name="data_absensi_foto">Photo</string>
+    <string name="btn_tampilkan">Show</string>
+    <string name="btn_istirahat">Break</string>
+    <string name="btn_keluar">Exit</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">News</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="label_message_gagal_mengambil_keterangan">Cannot retrieve the information data</string>
+
+    <!--Home Activity-->
+    <string name="label_login_kembali">login kembali</string>
+    <string name="label_message_tidak_ada_notifikasi">There are no notifications</string>
+    <string name="label_message_tidak_ada_data_notifikasi">There is no notification data</string>
+    <string name="label_message_tidak_ada_news">Tidak dapat menampilkan berita</string>
+    <string name="label_message_error_absensi">Cannot check attendance</string>
+    <string name="lable_message_error_crop_action">This device doesn\'t support the crop action!</string>
+    <string name="label_message_error_absen_keluar">Unable to make an absence out</string>
+    <string name="title_dialog_success">Success!</string>
+    <string name="title_dialog_warning">Warning!</string>
+    <string name="title_dialog_error">Error!</string>
+    <string name="label_message_error_izin_pulang">Cannot do go home permit</string>
+    <string name="label_message_error_ambil_foto">Cannot take photo</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="start_time">Start Time</string>
+    <string name="timeNol">-- : --</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_message_account_has_expired">Your account has expired</string>
+    <string name="label_message_for_more_information">For more information :\nhttp://pressensi.com</string>
+    <string name="title_log_absensi">Log Absensi</string>
+    <string name="label_message_belum_ada_data">Belum ada data</string>
+    <string name="label_date">Date</string>
+    <string name="title_izin_amp_cuti" translatable="false"><![CDATA[Izin & Cuti]]></string>
+    <string name="title_pengumuman" translatable="false">Pengumuman</string>
+    <string name="title_profile" translatable="false">Profil</string>
+    <string name="title_reimburse" translatable="false">Reimburse</string>
+    <string name="title_premium" translatable="false">Premium</string>
+
+    <!--Log Absensi Activity-->
+    <string name="label_duration">Duration</string>
+    <string name="label_information">Information</string>
+
+    <!--Register Activity-->
+    <string name="label_message_have_an_account">Already have an account?</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="label_work_hour">Work Hours</string>
+
+    <!--Log History Fragment-->
+    <string name="title_fake_gps_detected">Fake Location Detected</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="label_message_fake_gps_detected">Please turn off your Fake Location application</string>
+    <string name="title_gps_disabled">GPS is disabled</string>
+    <string name="label_message_gps_disabled">Please set your GPS to be high accuracy on settings menu. Do you want to go to settings menu?</string>
+    <string name="label_create_new_account">Create New Account</string>
+    <string name="label_make_sure_the_data_you_input_is_correct">Make sure the data you input is correct</string>
+    <string name="label_full_name">Nama Lengkap</string>
+
+    <!--Register Form Activity-->
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="label_company_name">Company Name</string>
+    <string name="label_company_address">Company Address</string>
+    <string name="label_about_your_company">About Your Company</string>
+    <string name="label_submit">Submit</string>
+    <string name="facebook_app_id" translatable="false">660056801157385</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb660056801157385</string>
+    <string name="google_client_id" translatable="false">401355437672-ppl5o1h5hlm0nlm54q6197pvsur1jef8.apps.googleusercontent.com</string>
+
+    <!--    Welcome Slider Activity-->
+    <string name="title_welcome_slider_1">Welcome</string>
+    <string name="label_welcome_slider_1">Get to know more about PRESSenSI</string>
+    <string name="title_welcome_slider_2" translatable="false">Ease Your Daily Work-life</string>
+    <string name="label_welcome_slider_2" translatable="false">Enjoy our features that make everyday work-life easier.</string>
+    <string name="title_welcome_slider_3" translatable="false">Get Notified Whenever &amp; Wherever</string>
+    <string name="label_welcome_slider_3" translatable="false">Attendance, Reimburse, Paid/Sick Leave, Notifications, etc are made via application</string>
+    <string name="title_welcome_slider_4" translatable="false">Let’s Get Started</string>
+    <string name="label_welcome_slider_4" translatable="false">Let’s get to work</string>
+
+    <!--Facebook SDK-->
+    <string name="title_free_trial" translatable="false">FREE TRIAL</string>
+
+    <!--Google SDK-->
+    <string name="label_facebook" translatable="false">Facebook</string>
+    <string name="label_mulai">Mulai</string>
+
+
+    <string name="label_password" translatable="false">Password</string>
+    <string name="label_konfirmasi_password" translatable="false">Konfirmasi Password</string>
+    <string name="label_nomor_telepon" translatable="false">Nomor Telepon</string>
+    <string name="label_alamat" translatable="false">Alamat</string>
+    <string name="label_personal_data" translatable="false">Personal Data</string>
+    <string name="label_nama_perusahaan" translatable="false">Nama Perusahaan</string>
+    <string name="label_jumlah_pegawai" translatable="false">Jumlah Pegawai</string>
+    <string name="label_alamat_perusahaan" translatable="false">Alamat Perusahaan</string>
+    <string name="label_simpan" translatable="false">Simpan</string>
+    <string name="label_company_data" translatable="false">Company Data</string>
+    <string name="label_message_error_nama">Nama tidak boleh kosong</string>
+    <string name="label_message_error_email_">Email tidak boleh kosong</string>
+    <string name="label_message_error_password_">Password tidak boleh kosong</string>
+    <string name="label_message_error_konfirmasi_password">Konfirmasi password tidak boleh kosong</string>
+    <string name="label_message_error_password_not_match">Konfirmasi password tidak sesuai</string>
+    <string name="label_message_error_nomor_telepon">Nomor telepon tidak boleh kosong</string>
+    <string name="label_message_error_alamat">Alamat tidak boleh kosong</string>
+    <string name="label_message_error_nama_perusahaan">Nama perusahaan tidak boleh kosong</string>
+    <string name="label_message_error_jumlah_pegawai">Jumlah pegawai tidak boleh kosong</string>
+    <string name="label_message_error_alamat_perusahaan">Alamat perusahaan tidak boleh kosong</string>
+    <string name="label_message_gagal">Gagal</string>
+    <string name="label_google" translatable="false">Google</string>
+    <string name="label_next" translatable="false">Next</string>
+    <string name="label_message_error_password_length"><![CDATA[Min 5 & Max 8 karakter]]></string>
+    <string name="label_message_error_format_jumlah_pegawai">Format jumlah pegawai tidak boleh diawali dari angka 0</string>
+    <string name="title_peringatan" translatable="false">Peringatan</string>
+    <string name="label_message_user_sudah_terdaftar" translatable="false">User sudah terdaftar</string>
+    <string name="content_icon_basic_feature" translatable="false">Icon basic feature</string>
+    <string name="content_icon_premium_feature" translatable="false">Icon premium feature</string>
+    <string name="label_order" translatable="false">Order</string>
+    <string name="title_get_premium" translatable="false">Get Premium</string>
+    <string name="label_lama_berlangganan_bulan" translatable="false">Lama Berlangganan (Bulan)</string>
+    <string name="label_image_feature_information" translatable="false">Image feature information</string>
+    <string name="label_total_harga" translatable="false">Total Harga = %1$s</string>
+    <string name="label_message_no_data_reimburse" translatable="false">Belum Memiliki Data</string>
+    <string name="label_nama_paket" translatable="false">Paket %1$s</string>
+    <string name="label_harga_paket" translatable="false">Harga = %1$s/User/Bulan</string>
+    <string name="title_pilih_paket" translatable="false">Pilih Paket</string>
+    <string name="label_message_error_jumlah_pegawai_kosong" translatable="false">Jumlah Pegawai tidak boleh kosong</string>
+    <string name="label_message_error_lama_berlangganan_kosong" translatable="false">Lama Berlangganan tidak boleh kosong</string>
+
+    <string name="persetujuan">Persetujuan</string>
+
+    <!--Persetujuan Activity-->
+    <string name="tab_cuti">Cuti</string>
+    <string name="tab_sakit">Sakit</string>
+    <string name="tab_lembur">Lembur</string>
+    <string name="tab_izin">Izin</string>
+    <string name="tab_lain">Lainnya</string>
+
+    <string-array name="array_tipe">
+        <item>Sakit</item>
+        <item>Izin</item>
+    </string-array>
+    <string-array name="label_image_picker_items">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+
+    <string-array name="array_perhatian">
+        <item>Surat peringatan kepada saudara Chul-San</item>
+        <item>Meeting dengan Ventura</item>
+    </string-array>
+
+    <!--String Redesign -->
+    <string name="str_ketforgot">Masukkan nip yang telah di kaitkan dengan akun Anda.</string>
+    <string name="str_atau">Atau</string>
+    <string name="str_ketforgotdua">Hubungi layanan support kami</string>
+    <string name="str_nip">NIP</string>
+    <string name="str_kirim">Kirim</string>
+    <string name="str_terimakasih">Terimakasih</string>
+    <string name="str_textforgotsukses1">Perubahan password telah kami kirim</string>
+    <string name="str_textforgotsukses2">Harap cek email anda</string>
+    <string name="str_password">Password</string>
+    <string name="str_masuk">Masuk</string>
+    <string name="str_lupa_password">Forget your password?</string>
+    <string name="str_kembali">Kembali</string>
+    <string name="str_beranda">Home</string>
+    <string name="str_riwayat">Riwayat</string>
+    <string name="str_statisik">Statistik</string>
+    <string name="str_akun">Akun</string>
+    <string name="str_toolbar_ubahkatasandi">Ubah Kata Sandi</string>
+    <string name="str_toolbar_profil">Akun</string>
+    <string name="str_keluar">Keluar</string>
+    <string name="str_helper_kata_sandi_lama">Masukkan kata sandi lama</string>
+    <string name="str_helper_kata_sandi_baru">Masukkan kata sandi baru</string>
+    <string name="str_helper_kata_sandi_konfirmasi">Masukkan kata ulang sandi baru</string>
+    <string name="str_hint_pw_lama">Kata sandi lama</string>
+    <string name="str_hint_pw_baru">Kata sandi baru</string>
+    <string name="str_hint_pw_konfirmasi">Konfirmasi Kata sandi</string>
+    <string name="str_masukan_username">Masukkan username</string>
+    <string name="str_masukan_unit">Masukkan unit</string>
+    <string name="str_masukan_email">Masukkan email</string>
+    <string name="str_masukan_telepon">Masukkan telepon</string>
+    <string name="str_toolbar_ubahakun">Ubah Akun</string>
+    <string name="str_nama">User</string>
+    <string name="str_jabatan">Staff</string>
+    <string name="str_header_username">NIP / USERNAME</string>
+    <string name="str_username">NAMA</string>
+    <string name="str_header_unit">UNIT</string>
+    <string name="str_tekhnis">Tekhnis</string>
+    <string name="str_header_email">EMAIL</string>
+    <string name="str_email">user@gmail.com</string>
+    <string name="str_header_telepon">TELEPON</string>
+    <string name="str_telepon">08132454545</string>
+    <string name="str_alamat_kantor_1">Jl. Setrasari Indah No. 4</string>
+    <string name="str_alamat_kantor_2">Sukarasa, Sukasari, Kota Bandung</string>
+    <string name="str_email_info">info@pressensi.com</string>
+    <string name="str_telepon_info">022-2010606</string>
+    <string name="str_telepon_info2">0813 1044 5410</string>
+    <string name="str_alamat">ALAMAT</string>
+    <string name="str_upload_foto">Sedang mengunggah foto…</string>
+    <string name="str_masukan_alamat">Masukkan alamat</string>
+    <string name="str_gunakanlokasi">Gunakan lokasi saat ini</string>
+    <string name="str_lokasi_anda">Lokasi Anda :</string>
+    <string name="str_08_00">08:00</string>
+    <string name="str_tanggal">13 Agustus 2017</string>
+    <string name="str_koma">,</string>
+    <string name="str_hari">Hari</string>
+    <string name="str_starttime">Jam Masuk</string>
+    <string name="str_endtime">Jam Keluar</string>
+    <string name="str_timenol">-- : --</string>
+    <string name="str_istirahat">Istirahat</string>
+    <string name="str_keterangan">Keterangan</string>
+    <string name="str_main_pengajuan">Pengajuan</string>
+    <string name="str_main_kegiatan">Kegiatan</string>
+    <string name="str_main_reimburse">Reimburse</string>
+    <string name="str_main_jadwal">Jadwal</string>
+    <string name="str_main_absensi">Absensi Harian</string>
+    <string name="str_main_pengumuman">Pengumuman</string>
+    <string name="str_main_obrolan">Obrolan</string>
+    <string name="str_main_lainnya">Lainnya</string>
+    <string name="str_main_persetujuan">Persetujuan</string>
+    <string name="str_day">Selamat pagi,</string>
+    <string name="str_day2">Selamat siang,</string>
+    <string name="str_day3">Selamat sore,</string>
+    <string name="str_day4">Selamat malam,</string>
+    <string name="str_beranda_menu">Jangan lupa melakukan absensi ya !</string>
+    <string name="str_jam_datang">-</string>
+    <string name="str_jam_istirahat">-</string>
+    <string name="str_waktu_istirahat">Waktu Istirahat</string>
+    <string name="str_waktu_kembali">Waktu Kembali</string>
+    <string name="str_jam_kembali">-</string>
+    <string name="str_waktu_keluar">Waktu Keluar</string>
+    <string name="str_status">Status</string>
+    <string name="str_status_terlambat">-</string>
+    <string name="str_waktu_datang">Waktu Datang</string>
+    <string name="str_jam_keluar">-</string>
+    <string name="str_btn_viewdate">Filter</string>
+    <string name="str_date_log_absen">--</string>
+    <string name="str_waktoo_news_mark">Pressensi News</string>
+    <string name="str_hot_news">Hot News</string>
+    <string name="str_judul">Judul</string>
+    <string name="str_kategori">Kategori</string>
+    <string name="str_titik">&#11044;</string>
+    <string name="str_aktifitas">Aktivitas</string>
+    <string name="str_pengaturan">Pengaturan</string>
+    <string name="str_ubah_data_diri">Ubah data diri</string>
+    <string name="str_ubah_kata_sandi">Ubah kata sandi</string>
+    <string name="str_bantuan">Bantuan</string>
+    <string name="str_tentang">Tentang</string>
+    <string name="str_versi">Versi 1.20.0</string>
+    <string name="str_new">Apa yang baru?</string>
+    <string name="str_absensi_harian">Absensi Harian</string>
+    <string name="str_tambah_kegiatan">Tambah Kegiatan</string>
+    <string name="str_public">Public</string>
+    <string name="str_private">Private</string>
+    <string name="str_kegiatan_anda">Apa kegiatan anda hari ini ?</string>
+    <string name="str_news_daily">Berita Terkini</string>
+    <string name="str_foto">Foto</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="str_login">LOGIN</string>
+    <string name="str_metode_lain">Metode lain</string>
+    <string name="skip">Skip</string>
+    <string name="halo_msg">Halo</string>
+    <string name="samsan_tech">Samsan Tech</string>
+    <string name="perhatian">Perhatian</string>
+    <string name="data_not_found">Data Not Found</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="reward">Reward</string>
+    <string name="pengajuan">Pengajuan</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="agenda">Agenda</string>
+
+</resources>

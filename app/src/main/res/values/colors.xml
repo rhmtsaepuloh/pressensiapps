@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A4E1</color>
+    <color name="colorPrimaryDark">#0195CC</color>
+    <color name="colorAccentFCM">#FFA000</color>
+
+    <color name="colorAccent">#fbb03b</color>
+    <color name="colorAccentDark">#faa622</color>
+    <color name="colorAccentLight">#fcba54</color>
+
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_soft">#F5F5F5</color>
+    <color name="grey_dark">#262626</color>
+    <color name="grey_bg">#E6E6E6</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="bt_add_color">#49a6e9</color>
+    <color name="colorBlack">#000000</color>
+    <color name="blue_google">#4285F4</color>
+
+    <color name="good_gray">#A2A1A1</color>
+
+    <color name="btn_decline_red">#CCE51C23</color>
+    <color name="btn_approve_green">#CC259B24</color>
+
+    <!-- Screens background color-->
+
+    <color name="textGreyDark">#4e4e4e</color>
+
+    <color name="btnGrey">#d4d2cd</color>
+    <color name="btnGreyDark">#c9c5bf</color>
+
+    <color name="btnGreen">#55ba60</color>
+    <color name="btnGreenDark">#47af52</color>
+
+    <color name="backgroundr">#E6E7E9</color>
+
+    <color name="overlay_dark_20">#33000000</color>
+
+    <color name="overlay_light_30">#4DFFFFFF</color>
+
+    <color name="red_400">#e84e40</color>
+    <color name="red_700">#d01716</color>
+
+    <color name="indigo_600">#3949ab</color>
+    <color name="indigo_A200">#536dfe</color>
+
+    <color name="blue_50">#e7e9fd</color>
+    <color name="blue_500">#5677fc</color>
+
+    <color name="light_green_600">#7cb342</color>
+
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_80">#37474F</color>
+
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_500">#9e9e9e</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_black_1000">#000000</color>
+    <color name="grey_white_1000">#ffffff</color>
+
+    <!--library-->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+
+    <!--TextView-->
+    <color name="colorSmallText">#99000000</color>
+    <color name="colorCaptionText">#4D4E4E</color>
+
+    <color name="colorDivider">#afafaf</color>
+    <color name="colorBackground">#F2F2F2</color>
+    <color name="colorBackgroundDefault">#ffffff</color>
+    <color name="whiteVeryTransparent">#73EEEEEE</color>
+
+    <color name="color_red">#E21616</color>
+    <color name="colorTextItem">#4d4e4e</color>
+    <color name="colorGreenCommon">#6AC160</color>
+
+    <color name="abumuda">#F1F1F1</color>
+
+    <color name="overlay_dark_10">#1A000000</color>
+</resources>

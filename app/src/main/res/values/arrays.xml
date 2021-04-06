@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="times">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>5 hours</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+    </string-array>
+
+    <!-- Welcome Slider Activity -->
+    <string-array name="title_welcome_sliders">
+        <item>@string/title_welcome_slider_1</item>
+        <item>@string/title_welcome_slider_2</item>
+        <item>@string/title_welcome_slider_3</item>
+        <item>@string/title_welcome_slider_4</item>
+    </string-array>
+
+    <string-array name="caption_welcome_sliders">
+        <item>@string/label_welcome_slider_1</item>
+        <item>@string/label_welcome_slider_2</item>
+        <item>@string/label_welcome_slider_3</item>
+        <item>@string/label_welcome_slider_4</item>
+    </string-array>
+
+    <integer-array name="drawable_welcome_sliders">
+        <item>@drawable/image_welcome_slider_1</item>
+        <item>@drawable/image_welcome_slider_2</item>
+        <item>@drawable/image_welcome_slider_3</item>
+        <item>@drawable/image_welcome_slider_4</item>
+    </integer-array>
+</resources>

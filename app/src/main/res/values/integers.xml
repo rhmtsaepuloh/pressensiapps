@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_duration_long__">600</integer>
+
+    <integer name="nomor_telepon_max_length">13</integer>
+    <integer name="jumlah_pegawai_max_length">5</integer>
+    <integer name="password_max_length">8</integer>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "309739659484",
+    "project_id": "pressensiapps",
+    "storage_bucket": "pressensiapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309739659484:android:1aa7970eea5dd0148a5419",
+        "android_client_info": {
+          "package_name": "com.folkatech.pressensiapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309739659484-cjcp8hpc8mea9v44vejjlcmlr0dig95c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.folkatech.pressensiapps",
+            "certificate_hash": "b0c0c7fcbae47638ec0b5cb5ec875b69e6948192"
+          }
+        },
+        {
+          "client_id": "309739659484-holghcds4jumli4jf2v3chrtasni9ivq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChgRmhMxnuKAuTY4W1wtal0rx58kNkubo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309739659484-holghcds4jumli4jf2v3chrtasni9ivq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

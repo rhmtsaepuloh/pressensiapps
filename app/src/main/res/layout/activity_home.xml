@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.home.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fl_home_04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include layout="@layout/home_bottom_menu"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/_9sdp"
+            android:layout_centerHorizontal="true">
+
+            <com.skyfishjy.library.RippleBackground
+                android:id="@+id/ripple_masuk_04"
+                android:visibility="gone"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                app:rb_color="@color/colorPrimary"
+                app:rb_duration="3000"
+                app:rb_radius="@dimen/_10sdp"
+                app:rb_rippleAmount="4"
+                app:rb_scale="4">
+
+                <ImageButton
+                    android:id="@+id/btn_mulai_absen_04"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_states_blue"
+                    app:srcCompat="@drawable/fingerprint" />
+
+            </com.skyfishjy.library.RippleBackground>
+
+            <com.skyfishjy.library.RippleBackground
+                android:id="@+id/ripple_keluar_04"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:visibility="gone"
+                app:rb_color="@color/colorPrimaryDark"
+                app:rb_duration="3000"
+                app:rb_radius="@dimen/_10sdp"
+                app:rb_rippleAmount="4"
+                app:rb_scale="4">
+
+                <ImageButton
+                    android:id="@+id/btn_keluar_absen_04"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_states_green"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_power_settings_new_24" />
+
+            </com.skyfishjy.library.RippleBackground>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

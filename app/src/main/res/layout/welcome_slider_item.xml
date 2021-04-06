@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activity.welcomeslider.WelcomeSliderActivity">
+
+    <ImageView
+        android:id="@+id/iv_welcome_item"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/_30sdp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:src="@drawable/image_welcome_slider_1" />
+
+    <TextView
+        android:id="@+id/tv_welcome_title_item"
+        style="@style/poppinsBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:paddingHorizontal="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_welcome_item"
+        tools:text="@string/title_welcome_slider_2" />
+
+    <TextView
+        android:id="@+id/tv_welcome_caption_item"
+        style="@style/poppinsRegular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xlarge__"
+        android:layout_marginTop="@dimen/margin_large__"
+        android:layout_marginEnd="@dimen/margin_xlarge__"
+        android:textAlignment="center"
+        android:textColor="#8E8E93"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_title_item"
+        tools:text="@string/label_welcome_slider_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
