@@ -7,19 +7,23 @@
     android:background="@color/white"
     android:orientation="vertical"
     tools:context=".ui.activity.login.LoginActivity">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:scrollbars="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_170sdp"
                 android:background="@color/colorPrimary">
+
                 <ImageView
                     android:layout_width="@dimen/_180sdp"
                     android:layout_height="@dimen/_100sdp"
@@ -31,21 +35,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/log_in"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/white"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginLeft="@dimen/_20sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"/>
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/log_in"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp" />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/_20sdp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/til_email_01"
@@ -57,14 +61,14 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_email_01"
-                        android:drawableStart="@drawable/ic_person_dark_grey_24dp"
-                        android:drawablePadding="@dimen/_10sdp"
-                        android:imeOptions="actionNext"
-                        android:singleLine="true"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person_dark_grey_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
                         android:hint="@string/str_email"
-                        android:inputType="text" />
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:singleLine="true" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,26 +82,26 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_password_01"
-                        android:drawableStart="@drawable/ic_lock_dark_gray_24dp"
-                        android:drawablePadding="@dimen/_10sdp"
-                        android:imeOptions="actionDone"
-                        android:maxLength="20"
-                        android:singleLine="true"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_lock_dark_gray_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
                         android:hint="@string/str_password"
-                        android:inputType="textPassword" />
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:singleLine="true" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:id="@+id/tv_lupapw_01"
+                    style="@style/MyCustomTabTextAppearance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
-                    style="@style/MyCustomTabTextAppearance"
                     android:gravity="center"
-                    android:text="@string/str_lupa_password" />
+                    android:text="@string/str_lupa_password"
+                    android:textColor="@color/colorPrimary" />
 
                 <Button
                     android:id="@+id/btn_masuk_01"
@@ -105,29 +109,38 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15sdp"
-                    android:text="@string/str_login"/>
+                    android:text="@string/str_login" />
 
                 <TextView
-                    android:visibility="gone"
                     android:id="@+id/tv_metode_lain"
+                    style="@style/MyCustomTabTextAppearance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/grey_medium"
-                    android:text="@string/str_metode_lain"
                     android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:text="@string/str_metode_lain"
+                    android:textColor="@color/grey_medium"
+                    android:visibility="gone" />
+
+                <TextView
                     style="@style/MyCustomTabTextAppearance"
-                    android:gravity="center"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/metode_lain" />
 
                 <ImageView
-                    android:visibility="gone"
                     android:id="@+id/btn_google"
+                    style="@style/clickableBackgroundBorderless"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
-                    android:src="@drawable/google"
-                    style="@style/clickableBackgroundBorderless"
-                    android:background="@drawable/round_button"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_gravity="center"/>
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/google"
+                    android:visibility="visible" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
