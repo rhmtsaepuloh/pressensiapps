@@ -67,10 +67,10 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'waktoo'
-            keyPassword 'waktoo'
-            storeFile file('/Users/rhmtsaepuloh/Documents/Mobile/PressensiApps/waktoo.jks')
-            storePassword 'waktoo'
+            keyAlias 'pressensi'
+            keyPassword 'pressensi'
+            storeFile file('~/Home/AndroidStudioProjects/PressensiApps/pressensi.jks')
+            storePassword 'pressensi'
         }
     }
 
