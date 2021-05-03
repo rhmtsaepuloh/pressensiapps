@@ -177,7 +177,7 @@
     <string name="label_submit">Submit</string>
     <string name="facebook_app_id" translatable="false">660056801157385</string>
     <string name="fb_login_protocol_scheme" translatable="false">fb660056801157385</string>
-    <string name="google_client_id" translatable="false">401355437672-ppl5o1h5hlm0nlm54q6197pvsur1jef8.apps.googleusercontent.com</string>
+    <string name="google_client_id" translatable="false">309739659484-93re8ilqskmfc3h2ccdn9rm4ev7h9sgp.apps.googleusercontent.com</string>
 
     <!--    Welcome Slider Activity-->
     <string name="title_welcome_slider_1">Welcome</string>
@@ -381,5 +381,6 @@
     <string name="pengajuan">Pengajuan</string>
     <string name="aktivitas">Aktivitas</string>
     <string name="agenda">Agenda</string>
+    <string name="metode_lain">Metode Lain</string>
 
 </resources>

@@ -24,6 +24,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import com.google.gson.GsonBuilder
 import com.jakewharton.rxbinding3.widget.textChanges
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -255,10 +256,12 @@ class LoginActivity : BaseActivity(), LoginContract.View, View.OnLayoutChangeLis
             val account = completedTask.getResult(ApiException::class.java)
 
             // Signed in successfully, show authenticated UI.
-//            val token = account!!.idToken
-//            val name = account.displayName
-//            val email = account.email
-            Log.d(TAG, "onActivityResult: ${account}")
+            val gson = GsonBuilder().setPrettyPrinting().create()
+            Log.d(TAG, "onActivityResult: ${gson.toJson(account)}")
+            Log.d(TAG, "IdToken: ${account.idToken}")
+            Log.d(TAG, "displayName: ${account.displayName}")
+            Log.d(TAG, "email: ${account.email}")
+            Log.d(TAG, "photoUrl: ${account.photoUrl}")
 
 //            presenter.submitLoginBySocMed(getFcmToken(), name, email)
         } catch (e: ApiException) {
