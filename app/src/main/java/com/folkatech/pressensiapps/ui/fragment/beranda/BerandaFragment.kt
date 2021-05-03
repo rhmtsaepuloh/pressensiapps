@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.folkatech.pressensi.model.DataListPegawai
 import com.folkatech.pressensi.model.Informasi
 import com.folkatech.pressensiapps.R
 import com.folkatech.pressensiapps.common.base.BaseAdapter
@@ -27,6 +28,7 @@ class BerandaFragment : BaseFragment(), BerandaContract.View, BaseAdapter.OnRelo
 
     private val PAGE_SIZE = 15
     private var currentPage = 1
+    private var currentPageAbsensi = 1
     private var isLastPage = false
     private var isLoading = false
     private lateinit var linearLayoutManager: LinearLayoutManager;
@@ -52,6 +54,7 @@ class BerandaFragment : BaseFragment(), BerandaContract.View, BaseAdapter.OnRelo
     override fun onInit() {
         initView();
         presenter.getPengumuman(currentPage);
+        presenter.getAbsensiHarian(currentPageAbsensi);
     }
 
     override fun initView() {
@@ -148,5 +151,17 @@ class BerandaFragment : BaseFragment(), BerandaContract.View, BaseAdapter.OnRelo
 
     override fun onReloadClick() {
         TODO("Not yet implemented")
+    }
+
+    override fun onSuccessGetListPegawai(data: List<DataListPegawai>) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onErrorGetListPegawai() {
+        error_timeline.text = "Tidak ada data"
+        error_ll.visibility = View.VISIBLE
+        reload_btn.visibility = View.GONE
+        swipe_container.isRefreshing = false
+        loading_timeline.visibility = View.GONE
     }
 }

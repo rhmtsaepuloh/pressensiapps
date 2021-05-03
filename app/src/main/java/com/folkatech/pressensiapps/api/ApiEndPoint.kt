@@ -10,6 +10,8 @@ object ApiEndPoint {
     const val ENDPOINT_LOGIN = "api/auth/login"
     const val ENDPOINT_DETAIL_USER = "api/user/detailUser"
     const val ENDPOINT_CEK_ABSENSI = "api/absensi/cekAbsensi"
+    const val ENDPOINT_LIST_PEGAWAI = "api/user/listPegawai"
+
     const val ENDPOINT_GET_TOTAL_NOTIFIKASI = "api/user/getTotalNotifikasi"
     const val ENDPOINT_CEK_STATUS_ABSENSI = "api/absensi/cekStatusAbsensi"
     const val ENDPOINT_ABSEN_MASUK = "api/absensi/absenMasuk"
@@ -24,7 +26,6 @@ object ApiEndPoint {
     const val ENDPOINT_HISTORY_PENGAJUAN = "api/user/historyPengajuan"
     const val ENDPOINT_INFORMASI_SALDO = "api/user/informasiSaldo"
     const val ENDPOINT_LOG_ABSENSI = "api/user/LogAbsensi"
-    const val ENDPOINT_LIST_PEGAWAI = "api/user/listPegawai"
     const val ENDPOINT_GET_INFORMASI = "api/informasi/getInformasi"
     const val ENDPOINT_LIST_REIMBURSE = "api/reimburse/listReimburse"
     const val ENDPOINT_CLAIM_REIMBURSE = "api/reimburse/claim"

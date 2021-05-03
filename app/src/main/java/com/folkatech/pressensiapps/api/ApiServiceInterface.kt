@@ -259,7 +259,6 @@ interface ApiServiceInterface {
     @FormUrlEncoded
     @POST(ENDPOINT_LIST_PEGAWAI)
     fun getListPegawai(
-        @Field("nip") nip: String,
         @Field("token") token: String,
         @Field("page") page: Int
     ): Single<ListPegawaiResponse>

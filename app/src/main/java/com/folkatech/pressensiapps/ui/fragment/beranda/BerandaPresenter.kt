@@ -57,4 +57,25 @@ class BerandaPresenter: BerandaContract.Presenter {
                 })
         )
     }
+
+    override fun getAbsensiHarian(page: Int) {
+        subscriptions.add(
+            api.getListPegawai(token, page)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({ response ->
+                    if (response.status) {
+                        if (response.data != null)
+                            view.onSuccessGetListPegawai(response.data)
+                        else
+                            view.onErrorGetListPegawai()
+                    } else
+                        view.onErrorGetListPegawai()
+                }, { error ->
+                    Log.e(TAG, "getListPegawai: ${error.message}")
+                    view.onErrorGetListPegawai()
+                    view.showWarningAlert(WaktooApp.context!!.getString(R.string.label_message_error_koneksi))
+                })
+        )
+    }
 }

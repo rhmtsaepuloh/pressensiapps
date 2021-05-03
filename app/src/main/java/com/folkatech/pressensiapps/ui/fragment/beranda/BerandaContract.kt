@@ -1,5 +1,6 @@
 package com.folkatech.pressensiapps.ui.fragment.beranda
 
+import com.folkatech.pressensi.model.DataListPegawai
 import com.folkatech.pressensi.model.DataPengumuman
 import com.folkatech.pressensi.model.Informasi
 import com.folkatech.pressensiapps.common.base.BaseContract
@@ -21,10 +22,13 @@ class BerandaContract {
         fun initBgBeranda()
         fun onSuccessGetPengumuman(data: List<Informasi>)
         fun onErrorGetPengumuman(message: String)
+        fun onSuccessGetListPegawai(data: List<DataListPegawai>)
+        fun onErrorGetListPegawai()
 
     }
 
     interface Presenter : BaseContract.Presenter<View> {
         fun getPengumuman(page: Int)
+        fun getAbsensiHarian(page: Int)
     }
 }
